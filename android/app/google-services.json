@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "608581254199",
+    "firebase_url": "https://flutter-38ef1.firebaseio.com",
+    "project_id": "flutter-38ef1",
+    "storage_bucket": "flutter-38ef1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608581254199:android:d1de33bce42b0dbb35d3b2",
+        "android_client_info": {
+          "package_name": "com.rifanhidayat.sekolah"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "608581254199-54sh7hnm5hmmt1hpcikcgmtdqdes72co.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rifanhidayat.sekolah",
+            "certificate_hash": "959dce74d45adce14ddc7b1b91bd457973728ac4"
+          }
+        },
+        {
+          "client_id": "608581254199-54e4fr48ri6ru3bsresmt4fetb7herh8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOlRnfLaixJvN-vfcjeQWPqqdWy5aPJqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "608581254199-54e4fr48ri6ru3bsresmt4fetb7herh8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
