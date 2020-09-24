@@ -4,8 +4,7 @@ import 'package:sekolah/services/location_service.dart';
 
 import 'locator.config.dart';
 
-final
-locator = GetIt.instance;
+final locator = GetIt.instance;
 
 @injectableInit
 void setupLocator() {

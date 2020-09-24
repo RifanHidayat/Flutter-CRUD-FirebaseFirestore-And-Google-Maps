@@ -52,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           padding: EdgeInsets.only(left: 8.0, right: 8.0),
                           child: Container(
                             width: MediaQuery.of(context).size.width,
-                            height: 350.0,
+                            height: 400.0,
                             child: Padding(
                               padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
                               child: Material(
@@ -94,12 +94,15 @@ class _HomeScreenState extends State<HomeScreen> {
                                           width: double.infinity,
                                           child: Row(
                                             children: <Widget>[
-                                              Text(
-                                                '${items[index].alamat}',
-                                                style: TextStyle(
-                                                  color: Colors.black,
-                                                  fontSize: 15.0,
-                                                ),
+                                              Flexible(
+                                                child:Text(
+                                                  '${items[index].alamat}',
+                                                  style: TextStyle(
+                                                    color: Colors.black,
+                                                    fontSize: 15.0,
+                                                  ),
+                                              ),
+
                                               ),
                                             ],
                                           )),

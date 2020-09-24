@@ -157,10 +157,11 @@ class _SideBarState extends State<SideBar>
                           onTap: () {
                             signOutUser().then((value) {
                               Navigator.pushAndRemoveUntil(
-                                context,
-                                MaterialPageRoute(builder: (BuildContext context) => Root()),
-                                ModalRoute.withName('/Home')
-                              );
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (BuildContext context) =>
+                                          Root()),
+                                  ModalRoute.withName('/Home'));
                             });
                           },
                         ),

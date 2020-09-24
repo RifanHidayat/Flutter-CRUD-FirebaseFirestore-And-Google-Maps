@@ -52,8 +52,8 @@ class _addDataScreenState extends State<addDataScreen> {
     return ViewModelBuilder<HomeViewModel>.reactive(
       viewModelBuilder: () => HomeViewModel(),
       builder: (context, model, child) => Scaffold(
-        body: Container(
-          child: SingleChildScrollView(
+        body: SingleChildScrollView(
+          child: Container(
             child: Padding(
               padding:
                   const EdgeInsets.symmetric(vertical: 100, horizontal: 30),
@@ -122,7 +122,7 @@ class _addDataScreenState extends State<addDataScreen> {
                             });
 
                             services
-                                .tambahDataSekolah(nama.text, datalong, datalat,
+                                .tambahDataSekolah(nama.text, datalat, datalong,
                                     alamat.text, imageUrl)
                                 .then((_) {
                               Toast.show("Data berhasil disimpan", context,
@@ -130,14 +130,15 @@ class _addDataScreenState extends State<addDataScreen> {
 
                               Navigator.pushAndRemoveUntil(
                                   context,
-                                  MaterialPageRoute(builder: (BuildContext context) => Home()),
-                                  ModalRoute.withName('/addDataScreen')
-                              );
+                                  MaterialPageRoute(
+                                      builder: (BuildContext context) =>
+                                          Home()),
+                                  ModalRoute.withName('/addDataScreen'));
                             });
-                          }else{
-                            Toast.show("Klik tombol simpan sekali lagi", context,
+                          } else {
+                            Toast.show(
+                                "Klik tombol simpan sekali lagi", context,
                                 duration: 5, gravity: Toast.BOTTOM);
-
                           }
                         }
                       },
@@ -178,7 +179,6 @@ class _addDataScreenState extends State<addDataScreen> {
         SizedBox(height: 10.0),
         Container(
           alignment: Alignment.centerLeft,
-          height: 60.0,
           decoration: kBoxDecorationStyle,
           child: TextFormField(
             controller: nama,
@@ -244,8 +244,6 @@ class _addDataScreenState extends State<addDataScreen> {
       ],
     );
   }
-
-  Widget _buildSimpan(BuildContext context) {}
 
   uploadImage() async {
     final _storage = FirebaseStorage.instance;

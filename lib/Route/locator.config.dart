@@ -8,7 +8,6 @@ import 'package:get_it/get_it.dart';
 import 'package:injectable/injectable.dart';
 import 'package:stacked_services/stacked_services.dart';
 
-
 import 'thid_party_app.dart';
 
 /// adds generated dependencies
@@ -27,8 +26,10 @@ void $initGetIt(GetIt g, {String environment}) {
 class _$ThirdPartyServicesModule extends ThirdPartyServicesModule {
   @override
   DialogService get dialogService => DialogService();
+
   @override
   NavigationService get navigationService => NavigationService();
+
   @override
   SnackbarService get snackBarService => SnackbarService();
 }

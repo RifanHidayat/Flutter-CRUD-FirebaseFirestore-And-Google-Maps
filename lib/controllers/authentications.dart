@@ -30,6 +30,7 @@ showErrDialog(BuildContext context, String err) {
 // many unhandled google error exist
 // will push them soon
 FirebaseUser user;
+
 Future<bool> googleSignIn() async {
   GoogleSignInAccount googleSignInAccount = await gooleSignIn.signIn();
 
@@ -45,8 +46,6 @@ Future<bool> googleSignIn() async {
 
     user = await auth.currentUser();
     print(user.photoUrl);
-
-
 
     return Future.value(true);
   }

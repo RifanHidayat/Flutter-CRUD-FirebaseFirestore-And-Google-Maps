@@ -9,10 +9,15 @@ class HomeViewModel extends BaseViewModel {
   String _getNameLocation;
   String _getLat;
   String _getLong;
+
   String get latLong => _latLong;
+
   String get getSearchLocation => _getSearchLocation;
+
   String get getNameLocation => _getNameLocation;
+
   String get Lat => _getLat;
+
   String get Long => _getLong;
 
   Future searchLocationLong(val) async {
@@ -21,12 +26,11 @@ class HomeViewModel extends BaseViewModel {
     _getLong = position.toString();
     notifyListeners();
   }
+
   Future searchLocationLat(val) async {
     var position = await _locationService.searchLocationLat(val);
     print(position);
     _getLat = position.toString();
     notifyListeners();
   }
-
-
 }

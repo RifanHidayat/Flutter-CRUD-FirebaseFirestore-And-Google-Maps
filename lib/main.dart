@@ -1,9 +1,7 @@
-
 import 'package:flutter/material.dart';
 import 'package:sekolah/Route/locator.dart';
 import 'package:sekolah/Route/router.gr.dart';
 import 'package:stacked_services/stacked_services.dart';
-
 
 void main() {
   setupLocator();

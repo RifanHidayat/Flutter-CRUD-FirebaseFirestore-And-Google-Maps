@@ -5,9 +5,10 @@ import '../bloc.navigation_bloc/navigation_bloc.dart';
 import 'sidebar.dart';
 
 class SideBarLayout extends StatelessWidget {
-  final String uid,nama,photo,email;
+  final String uid, nama, photo, email;
 
-  SideBarLayout({this.uid,this.nama,this.email,this.photo});
+  SideBarLayout({this.uid, this.nama, this.email, this.photo});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +21,12 @@ class SideBarLayout extends StatelessWidget {
                 return navigationState as Widget;
               },
             ),
-            SideBar(uid: uid,nama: nama,email: email,photo: photo,),
+            SideBar(
+              uid: uid,
+              nama: nama,
+              email: email,
+              photo: photo,
+            ),
           ],
         ),
       ),

@@ -4,6 +4,7 @@ import 'package:stacked_services/stacked_services.dart';
 
 class LocationService {
   DialogService _dialogService = locator<DialogService>();
+
   Future searchLocationLong(val) async {
     try {
       List<Placemark> placemark = await Geolocator().placemarkFromAddress(val);
@@ -33,6 +34,4 @@ class LocationService {
           title: 'Something Wrong', description: e.toString());
     }
   }
-
-
 }

@@ -39,21 +39,24 @@ class _SplassScreenState extends State<SplassScreen> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Text("Sekolah App",
-                      style: TextStyle(color: Colors.white,fontFamily: "Billion",
-                        fontSize: 50
-                      ),
+                    Text(
+                      "Sekolah App",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: "Billion",
+                          fontSize: 50),
                     ),
-                    Image.asset('assets/images/logo.png',width: 100,height: 100,)
+                    Image.asset(
+                      'assets/images/logo.png',
+                      width: 100,
+                      height: 100,
+                    )
                   ],
                 ),
               ),
             )
-
-
           ],
         ),
-
       ),
     );
   }
@@ -64,8 +67,8 @@ class _SplassScreenState extends State<SplassScreen> {
   }
 
   Void OnDone() {
-    Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => Root()));
+    Navigator.of(context)
+        .pushReplacement(MaterialPageRoute(builder: (context) => Root()));
   }
 
   @override

@@ -135,10 +135,15 @@ class _editDataScreenState extends State<editDataScreen> {
                                   duration: 5, gravity: Toast.BOTTOM);
                               Navigator.pushAndRemoveUntil(
                                   context,
-                                  MaterialPageRoute(builder: (BuildContext context) => Home()),
-                                  ModalRoute.withName('/ediDataScreen')
-                              );
+                                  MaterialPageRoute(
+                                      builder: (BuildContext context) =>
+                                          Home()),
+                                  ModalRoute.withName('/ediDataScreen'));
                             });
+                          } else {
+                            Toast.show(
+                                "Klik tombol simpan sekali lagi", context,
+                                duration: 5, gravity: Toast.BOTTOM);
                           }
                         }
                       },
@@ -148,7 +153,7 @@ class _editDataScreenState extends State<editDataScreen> {
                       ),
                       color: Colors.white,
                       child: Text(
-                        'Simoan Data',
+                        'Simpan Data',
                         style: TextStyle(
                           color: Color(0xFF527DAA),
                           letterSpacing: 1.5,
